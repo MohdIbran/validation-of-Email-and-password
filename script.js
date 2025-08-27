@@ -3,8 +3,8 @@ let password = document.querySelector("#password");
 let form = document.querySelector("form");
 form.addEventListener("submit",function(dets) {
    dets.preventDefault();
-   email.textContent = "";
-   password.textContent = "";
+   
+   
    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
    let checkmail = emailRegex.test(email.value);
@@ -31,4 +31,5 @@ form.addEventListener("submit",function(dets) {
 
 
    
+
 })
